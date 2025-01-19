@@ -1,0 +1,43 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+theme = 'typo'
+
+[taxonomies]
+tag = 'tags'
+
+[params]
+description = "A Personal Page"
+theme = 'auto'
+colorPalette = 'default'
+hideHeader = false
+
+homeIntroTitle = 'Hey! Im Avi'
+homeIntroContent = """
+I'm a 20yo technologist, currently at UT Dallas. The most interesting thing in the world to me is building vertical AI software companies that will replace the majority of knowledge work functions over the coming decades and realistically triple Global GDP. 
+
+I'm a second-time founder also interested in microecon, utilitarian moral philosophy, public market comps, and large-scale sociological studies.
+
+Currently on: Pentra.io (early, few hundred MRR) & long-context LLM hacks.
+
+Reach me at avis2912@gmail.com! Below are some of my musings.
+"""
+
+homeCollectionTitle = 'Writings'
+homeCollection = 'writings'
+
+paginationSize = 100
+listSummaries = true
+listDateFormat = '2006'
+
+[[params.menu]]
+name = "me"
+url = "/"
+
+[[params.menu]]
+name = "writings"
+url = "/writings"
+
+
+
+[markup.highlight]
+style = 'algol'

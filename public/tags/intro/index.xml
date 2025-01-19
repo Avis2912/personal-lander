@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Intro on </title>
+    <link>http://localhost:1313/tags/intro/</link>
+    <description>Recent content in Intro on </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/intro/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Case Against AI Automation Theory</title>
+      <link>http://localhost:1313/writings/my-first-post/</link>
+      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writings/my-first-post/</guid>
+      <description>Why AI is never going to be why you&amp;rsquo;re unemployed</description>
+    </item>
+  </channel>
+</rss>
