@@ -10,10 +10,31 @@
     <atom:link href="http://localhost:1313/writings/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Case Against AI Automation Theory</title>
-      <link>http://localhost:1313/writings/my-first-post/</link>
+      <link>http://localhost:1313/writings/ai-automation-theory/</link>
       <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/writings/my-first-post/</guid>
+      <guid>http://localhost:1313/writings/ai-automation-theory/</guid>
       <description>Why AI is never going to be why you&amp;rsquo;re unemployed</description>
+    </item>
+    <item>
+      <title>The Implications of Zero Free Will</title>
+      <link>http://localhost:1313/writings/free-will-consequences/</link>
+      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writings/free-will-consequences/</guid>
+      <description>Libertarian free will doesn&amp;rsquo;t exist &amp;ndash; now what?</description>
+    </item>
+    <item>
+      <title>Notes On The Drowning Child</title>
+      <link>http://localhost:1313/writings/the-drowning-child/</link>
+      <pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writings/the-drowning-child/</guid>
+      <description>Rough notes tackling Peter Singer&amp;rsquo;s hypothetical</description>
+    </item>
+    <item>
+      <title>Solving Animal Ethics</title>
+      <link>http://localhost:1313/writings/animal-ethics/</link>
+      <pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writings/animal-ethics/</guid>
+      <description>Making the case for vegans</description>
     </item>
   </channel>
 </rss>

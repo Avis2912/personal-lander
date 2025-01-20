@@ -10,9 +10,9 @@
     <atom:link href="http://localhost:1313/tags/intro/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Case Against AI Automation Theory</title>
-      <link>http://localhost:1313/writings/my-first-post/</link>
+      <link>http://localhost:1313/writings/ai-automation-theory/</link>
       <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/writings/my-first-post/</guid>
+      <guid>http://localhost:1313/writings/ai-automation-theory/</guid>
       <description>Why AI is never going to be why you&amp;rsquo;re unemployed</description>
     </item>
   </channel>
