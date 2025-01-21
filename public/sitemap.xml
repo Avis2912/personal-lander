@@ -2,19 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/writings/software-spend/</loc>
+    <lastmod>2025-01-19T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-03-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/writings/</loc>
-    <lastmod>2025-03-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/intro/</loc>
-    <lastmod>2024-03-20T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/philosophy/</loc>
-    <lastmod>2024-03-20T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-01-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/writings/</loc>
+    <lastmod>2025-01-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/intro/</loc>
     <lastmod>2024-03-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/writings/ai-automation-theory/</loc>
@@ -28,5 +31,7 @@
   </url><url>
     <loc>http://localhost:1313/writings/animal-ethics/</loc>
     <lastmod>2023-03-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/write/</loc>
   </url>
 </urlset>

@@ -37,7 +37,9 @@ url = "/"
 name = "writings"
 url = "/writings"
 
-
+[[params.menu]]
+name = "write"
+url = "/write"
 
 [markup.highlight]
 style = 'algol'
