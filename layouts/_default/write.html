@@ -97,31 +97,93 @@
   padding: 0.5rem 1rem;
   border: 1px solid var(--content-secondary);
   border-radius: 4px;
-  background: var(--accent);
-  color: var(--background);
+  background: var(--content-secondary);  /* Changed this */
+  color: var(--background);  /* Changed this */
   cursor: pointer;
 }
 
 .save-btn:hover {
   opacity: 0.9;
 }
+
+/* Add EasyMDE styling overrides */
+.EasyMDEContainer {
+  background: var(--background);
+}
+
+.EasyMDEContainer .CodeMirror {
+  color: var(--content-primary);
+  border-color: var(--content-secondary);
+  background: var(--background);
+  font-family: var(--font-mono);
+}
+
+.editor-toolbar {
+  border-color: var(--content-secondary);
+  background: var(--background);
+}
+
+.editor-toolbar button {
+  color: var(--content-primary) !important;
+}
+
+.editor-toolbar button:hover {
+  background: var(--content-secondary);
+  color: var(--background) !important;
+}
+
+.editor-preview {
+  background: var(--background);
+  color: var(--content-primary);
+}
 </style>
 
+<link rel="stylesheet" href="https://unpkg.com/easymde/dist/easymde.min.css">
+<script src="https://unpkg.com/easymde/dist/easymde.min.js"></script>
 <script src="/assets/js/github-config.js"></script>
+
 <script>
+let editor;
+
 function authenticate() {
   const password = document.getElementById('password').value;
   if (password === 'popop09090') {
     document.getElementById('auth-container').classList.add('hidden');
     document.getElementById('editor-container').classList.remove('hidden');
+    initEditor();
   } else {
     alert('Incorrect password');
   }
 }
 
+function initEditor() {
+  editor = new EasyMDE({
+    element: document.getElementById('content'),
+    autofocus: true,
+    spellChecker: false,
+    status: false,
+    toolbar: ['bold', 'italic', 'heading', '|', 
+              'quote', 'unordered-list', 'ordered-list', '|',
+              'link', 'image', '|',
+              'preview', 'side-by-side', 'fullscreen'],
+    shortcuts: {
+      'toggleBold': 'Cmd-B',
+      'toggleItalic': 'Cmd-I',
+      'toggleHeading1': 'Cmd-1',
+      'toggleHeading2': 'Cmd-2',
+      'toggleHeading3': 'Cmd-3',
+    }
+  });
+}
+
+function getContent() {
+  return editor ? editor.value() : '';
+}
+
+// Update preview function to use EasyMDE's markdown
 function previewMarkdown() {
   const title = document.getElementById('title').value;
-  const content = document.getElementById('content').value;
+  const content = getContent();
   const win = window.open('', '_blank');
   win.document.write(`
     <html>
@@ -133,7 +195,7 @@ function previewMarkdown() {
         <div class="content">
           <h1>${title}</h1>
           <div class="single-content">
-            ${content}
+            ${editor.markdown(content)}
           </div>
         </div>
       </body>
@@ -143,7 +205,7 @@ function previewMarkdown() {
 
 async function saveToGitHub() {
   const title = document.getElementById('title').value;
-  const content = document.getElementById('content').value;
+  const content = getContent();
   const date = new Date().toISOString().split('T')[0];
   
   const markdown = `---
